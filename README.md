@@ -9,7 +9,7 @@ cross-site request forgery   跨站请求伪造
         $.get('./addfriend.json?userId=jack)
     }
 标准文件请求好友如上，伪造请求如下：
-<img src="http://192.168.1.113:8860/addfriend.json?userId=daliwan" alt="">
+&lt;img src="http://192.168.1.113:8860/addfriend.json?userId=daliwan" alt=""&gt;
 这样你在访问图片时，实际上就是添加了好友（<!--img的src等于一个API的地址-->）
 组织方法：利用cookie
 原理：
