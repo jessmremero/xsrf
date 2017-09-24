@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <button id="addfriend"> 添加好友</button>   
+<script>
+
+    document.cookie = "userId=111"
+    addfriend.onclick = function(){
+        $.get('./addfriend.json?userId=jack&cookietoken=${user}')
+    }<!--传参数的时候同时将cookie的值传过来-->
+</script>
+</body>
+</html>
